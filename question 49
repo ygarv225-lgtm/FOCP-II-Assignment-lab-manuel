@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+   int n,new,oddi;
+   int rev=0;
+   printf("enter a number ");
+   scanf("%d",&n);
+   oddi=n; // storing the value of number in a container so to compare it on last
+   // condition for revrsing a number 
+   while(n>0){
+      rev=rev*10+(n%10);
+      n/=10;
+   }
+   new=rev;
+   // checking for palindrome of a number
+   printf("%d is the reverse of the number\n",new);
+   if(oddi==new){
+      printf("%d is a palindrome ",oddi);
+   }
+   else{
+      printf("%d is not a palindrome ",oddi);
+   }
+  
+      return 0;
+}
