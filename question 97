@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+#include<limits.h>
+#include<string.h>
+int main(){
+  // converting the text into uppercase letters
+  // making the simpler code without the use of the toupper
+  char str[200];
+  puts("enter the name");
+  scanf("%[^\n]s",str);
+  // checking for the lower case leter and converting it into the upper case letter
+  for(int i=0;str[i]!='\0';i++){
+    if(str[i]>='a'&& str[i]<='z'){
+    str[i]=str[i]-32;
+    }
+  }
+  printf("%s",str);
+    return 0;
+}
