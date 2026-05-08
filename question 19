@@ -1,0 +1,23 @@
+
+int main(){
+   int n; // here n represent age
+   char nat; // here ch represent nationality
+   // checking the voting system
+   printf("if you are a indian then type i otherwise type o : ");
+   scanf("%c",&nat);
+   printf("enter your age ");
+   scanf("%d",&n);
+   if(nat=='i'){
+      if(n>=18){
+      printf("yes you are eligible for voting ");
+      }
+      else{
+         printf(" sorry you are under age");
+      }
+   }
+   else{
+      printf("you are a foreigner");
+   }
+
+   return 0;
+}
