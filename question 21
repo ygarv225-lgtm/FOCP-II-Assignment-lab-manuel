@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+   int n;
+   // checking the type of interger
+   printf("enter the interger ");
+   scanf("%d",&n);
+   if(n>0){
+      printf("the number is positive (+)");
+   }
+   else if(n<0){
+      printf("the number is negative (-)");
+   }
+   else{
+      printf("the number is absoulte zero (0)");
+   }
+   return 0;
+}
