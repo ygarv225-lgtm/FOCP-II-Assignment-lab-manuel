@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+   int n=0,m;
+   // checking that the input angles are contributing in making the valid triangle
+   for(int i=1;i<=3;i++){
+      printf("enter the %d angle ",i);
+      scanf("%d",&m);
+      n=n+m;
+   }
+   if(m!=0 && n==180){
+      printf("a valid traingle is formed");
+   }
+   else {
+      printf("a valid traingle is not formed");
+   }
+   return 0;
+}
