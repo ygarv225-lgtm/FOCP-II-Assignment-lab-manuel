@@ -1,0 +1,21 @@
+#include<math.h>
+#include<stdlib.h>
+int main(){
+   // hill shape arrangement of the bulbs
+   /* 
+   * 
+   * * *
+   * * * * *
+   */ int a;
+   int satrs=1;
+  printf("tell me how long you want to printf the arrangement ");
+  scanf("%d",&a);
+  for(int i=1;i<=a;i++){
+    for(int j=1;j<=satrs;j++){
+    printf("* ");
+    }
+    printf("\n");
+        satrs+=2;
+  }
+    return 0;
+}
