@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+   float n,m,b,des;
+   float x1,x2;
+   // checking the type of roots of the quadratic equation we have
+   printf("enter the value of c ");
+   scanf("%f",&n);
+   printf("enter the value of a ");
+   scanf("%f",&m);
+   printf("enter the value of b ");
+   scanf("%f",&b);
+   // so the equation is a*x*x + b*x + c
+   des=b*b - 4*n*m;
+   x1=(-b+sqrt(des))/2*m;
+    x2=(-b-sqrt(des))/2*m;
+   if(des>=0){
+      printf("%f and %f are the roots of the quadratic equation ",x1,x2);
+   }
+   return 0;
+}
