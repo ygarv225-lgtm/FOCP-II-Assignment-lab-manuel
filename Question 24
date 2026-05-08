@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+   int n,m;
+   // doing the task mentioned for even and odd numbers
+   printf("enter the value of c ");
+   scanf("%d",&n);
+   if(n%2==0){
+      m=n*n;
+      printf("the %d is even ",n);
+      printf("the task for even number is %d",m);
+   }
+   else {
+         m=n*n*n;
+      printf("the %d is odd",n);
+      printf("the task for odd number is %d",m);
+   }
+   return 0;
+}
