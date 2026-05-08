@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+   float f,g;
+   char com;
+    printf("You have to choose which command to want ot run ");
+   printf("\nfor addition\ta\nfor substraction\ts\nfor multiply\tm\nfor divide\td\n");
+   scanf("%c",&com);
+   printf("enter the first number ");
+   scanf("%f",&f);
+   printf("enter the second number ");
+   scanf("%f",&g);
+   switch(com){
+      case 'a':
+      printf("the addition of numbers is %f ",f+g);
+      break;
+      case 's':
+      printf("the substraction of numbers is %f ",f-g);
+      break;
+      case 'm':
+      printf("the multiplication of numbers are %f ",f*g);
+      break;
+      case 'd':
+      printf("the division of number is %f",f/g);
+      break;
+      default :
+      printf("you choose a wrong command ");
+   }
+   return 0;
+}
