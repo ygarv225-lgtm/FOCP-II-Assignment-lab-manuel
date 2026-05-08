@@ -1,0 +1,22 @@
+
+   int n,m,b,far;
+   // checking the type of roots of the quadratic equation we have
+   printf("enter the value of c ");
+   scanf("%d",&n);
+   printf("enter the value of a ");
+   scanf("%d",&m);
+   printf("enter the value of b ");
+   scanf("%d",&b);
+   // so the equation is a*x*x + b*x + c
+   far=b*b - 4*n*m;
+   if(far>0){
+      printf("real and unequal roots");
+   }
+   else if(far<0){
+      printf("imaginary roots");
+   }
+   else {
+      printf("real and equal roots");
+   }
+   return 0;
+}
