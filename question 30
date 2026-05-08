@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(){
+   //checking the divisiblity of first number and the second number 
+   // not considering the indetermininat forms
+   int n,m;
+   printf("enter the first number ");
+   scanf("%d",&n);
+   printf("enter the second number ");
+   scanf("%d",&m);
+   if(m==0){
+      printf("soory second number can not be zero");
+      // as it give a undetermined value
+   }
+   else if(n%m==0){
+      printf("yes the %d is divisible by %d ",n,m);
+   }
+   else {
+      printf("no the %d is not divisible by %d ",n,m);
+   }
+   return 0;
+}
