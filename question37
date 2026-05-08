@@ -1,0 +1,29 @@
+
+int main(){
+   float n,m,b;
+   // checking that the input sides are contributing in making the valid difffernt type of triangle
+   printf("enter the first side ");
+   scanf("%f",&n);
+    printf("enter the second side ");
+   scanf("%f",&m);
+    printf("enter the third side ");
+   scanf("%f",&b);
+   if(n+m>b || n+b>m || b+m>n){
+      if(n==m && m==b){
+         printf("Equilateral triangle");
+      }
+      else if((n==m && m!=b)||(m==b && n!=m) ){
+         printf("Isocleses triangle");
+      }
+      else if(n*n==m*m+b*b || m*m==n*n+b*b || b*b==n*n+m*m){
+         printf("the right angle triangle");
+      }
+      else{
+         printf("none of these");
+      }
+   }
+   else{
+      printf("nope these 3 sides do not contribute to make a triangle");
+   }
+   return 0;
+}
