@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+   // checking the typed number is prime or not
+   // solving by using flag technique
+   int n,max=1;
+   printf("enter the number in which you have to practise ");
+   scanf("%d",&n);
+   for(int i=1;i<=n;i++){
+      if(n%i==0){
+         printf("the factor of the %d is : %d\n",n,i);
+      }
+      else{
+         continue;
+      }
+   }
+      return 0;
+}
