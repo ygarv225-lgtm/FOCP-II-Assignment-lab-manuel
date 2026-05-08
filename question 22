@@ -1,0 +1,21 @@
+
+   int n,m,b;
+   // checking the type of interger
+   printf("enter the first number ");
+   scanf("%d",&n);
+   printf("enter the second number ");
+   scanf("%d",&m);
+   printf("enter the third number ");
+   scanf("%d",&b);
+   if(n>m && n>b){ // n is great
+      printf("%d is the greatest number ",n);
+   }
+   else if(m>n && m>b){ // m is greater
+   printf("%d is the greatest number ",m);
+   }
+   else if(b>n && b>m){ // b is greater
+   printf("%d is the greatest number ",b);
+   }
+
+   return 0;
+}
