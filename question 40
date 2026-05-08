@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+   float n,m;
+   // input the amount for the unit consumed
+   printf("Enter the price for consumption of a single unit ");
+   scanf("%f",&n);
+   printf("now pls enter the number of units consumed ");
+   scanf("%f",&m);
+   printf("BILL : %.2f",n*m);
+   return 0;
+}
