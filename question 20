@@ -1,0 +1,17 @@
+
+int main(){
+   int n;
+   float u;
+   // making the bill programme for a wholesaler 
+   printf("enter the number of items of the product you bought ");
+   scanf("%d",&n);
+   printf("enter the unit price of items of the product you bought ");
+   scanf("%f",&u);
+   if(n>1000){
+      printf("Your bill amount is %.3f\nYou got a additional 10%% discount\nYour Bill amount is now %.3f ",u*n,0.9*u*n);
+   }
+   else{
+      printf("Your Bill amount is now %.3f ",u*n);
+   }
+   return 0;
+}
