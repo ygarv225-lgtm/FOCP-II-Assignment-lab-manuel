@@ -1,0 +1,13 @@
+
+#include <stdlib.h>
+int main(){
+   // to display the numbers in reverse order
+   int n;
+   printf("enter the number from whrere you want to start the countdown ");
+   scanf("%d",&n);
+  for(int i=n;i>=1;i--){
+   printf("%d",i);
+   printf("\n");
+  }
+      return 0;
+}
